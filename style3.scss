@@ -1,0 +1,274 @@
+$bb: yellow;
+@import "reset";
+@import "mixin";
+@import "veriabless";
+
+#header{
+  backdrop-filter: blur(15px);
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 2px solid rgba(355, 355, 355, 0.14);
+  position: fixed;
+  .header{
+    @include space-between;
+a{
+  @include a;
+  color: $bo;
+  margin: 0 10px;
+}
+    a:hover{
+      color: red;
+      transition: 0.4s;
+    }
+    .praft--btn{
+        width: 193px;
+        height: 48px;
+        border: 2px solid #FFFFFF;
+        border-radius: 10px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.003em;
+      color: #FFFFFF;
+      background: none;
+    }
+    .praft--btn:hover{
+      transition: 0.4s;
+      background: red;
+      border: none;
+    }
+  }
+}
+#hero{
+  background: url("../img/bg4.png");
+  min-height: 75vh;
+  .hero{
+    padding-top: 250px;
+    h1{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 87px;
+      letter-spacing: 0.003em;
+      color: #FFFFFF;
+    }
+    h3{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.003em;
+      color: #FFFFFF;
+      padding: 20px 0;
+    }
+    .hero--batton{
+
+      button{
+        width: 300px;
+        height: 50px;
+        background: #FF001E;
+        border-radius: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: white;
+        border: 1px solid red;
+      }
+      button:hover{
+        transition: 0.4s;
+        background: white;
+        color: black;
+        border: none;
+      }
+
+    }
+    p{
+      margin: 20px 0;
+      width: 384px;
+      height: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+    }
+  }
+}
+#bloki{
+  background: $black;
+  .bloki{
+    .click{
+        @include flex-wrap;
+        &--block {
+          width: 400px;
+          height: 400px;
+          background: $bo;
+          border-radius: 20px;
+          margin: 15px 10px;
+
+          span {
+            @include h1;
+            color: red;
+            padding: 20px 0 10px 40px;
+          }
+
+          p {
+            @include p;
+            height: 120px;
+            width: 285px;
+            color: $black2;
+            padding: 20px 0 10px 40px;
+          }
+
+          &__text {
+            @include space-around;
+
+            h4 {
+              @include p;
+              color: $black2;
+              @include space-around;
+
+            }
+
+            span {
+              font-weight: 700;
+              font-size: 24px;
+              color: red;
+            }
+          }
+        }
+
+        .click--block1 {
+          width: 400px;
+          height: 98px;
+          background: black;
+          border-radius: 20px;
+
+          .click--rod {
+            display: flex;
+            justify-content: space-around;
+
+            .click--block__tochki {
+              margin-top: 10px;
+            }
+          }
+
+          img {
+            width: 50px;
+            height: 50px;
+            margin: 20px 30px;
+          }
+
+          .click--block__tochki {
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+
+          }
+        }
+      }
+    }
+  .click-butn{
+    button{
+      width: 413px;
+      height: 80px;
+      border: 2px solid #F5F7F9;
+      border-radius: 10px;
+      background: none;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.003em;
+      color: #FFFFFF;
+      margin-left: 480px;
+    }
+    button:hover{
+      transition: 0.4s;
+      background: white;
+      color: red;
+    }
+
+  }
+  .request{
+    margin-top: 100px;
+    h1{
+      font-family: 'Poppins',sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 42px;
+      letter-spacing: 0.003em;
+      color: red;
+    }
+    &--block{
+      @include space-between;
+      h4{
+        margin-top: -250px;
+        width: 629px;
+        height: 72px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.003em;
+        color: #FFFFFF;
+      }
+      &__red{
+        margin-bottom: 50px;
+        width: 642px;
+        height: 400px;
+        background: #9D0013;
+        border-radius: 20px;
+        @include space-around;
+        flex-wrap: wrap;
+        .ttt{
+          width: 582px;
+          height: 100px;
+        }
+        .bttn{
+          width: 582px;
+          height: 40px;
+          background:$black ;
+          border-radius: 10px;
+          border: 2px solid #222222;
+          color: $bo;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.003em;
+        }
+        .bttn:hover{
+          background: $bo;
+          color: $black;
+          border: 2px solid $bo;
+          transition: 0.4s;
+        }
+        input{
+          width: 280px;
+          height: 40px;
+          border-radius: 10px;
+          border: 1px solid $bo;
+          padding-left: 10px;
+        }
+        p{
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.003em;
+          text-decoration-line: underline;
+          color: #FFFFFF;
+          width: 576px;
+          height: 48px;
+        }
+      }
+
+    }
+  }
+
+  }
+

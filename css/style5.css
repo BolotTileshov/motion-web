@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+  backdrop-filter: blur(15px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.14);
+}
+#header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header--pravyi a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  margin: 0 20px;
+}
+#header .header--pravyi a:hover {
+  color: red;
+  transition: 0.4s;
+  text-decoration-line: underline;
+}
+#header .header--pravyi .pravyi-btn {
+  width: 193px;
+  height: 48px;
+  border: 2px solid red;
+  border-radius: 10px;
+  background: red;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+}
+#header .header--pravyi .pravyi-btn:hover {
+  transition: 0.3s;
+  color: red;
+  border: 1px solid black;
+  background: #FFFFFf;
+}
+
+#hero {
+  background: url("../img/bg3.png");
+  min-height: 75vh;
+}
+#hero .hero {
+  padding-top: 200px;
+}
+#hero .hero p {
+  margin: 20px 0;
+  width: 384px;
+  height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+#hero .hero h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+}
+#hero .hero h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  padding: 10px 0;
+}
+#hero .hero .Rab {
+  width: 250px;
+  height: 40px;
+  background: #FF001E;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: none;
+}
+#hero .hero .Rab:hover {
+  transition: 0.4s;
+  background: white;
+  border: none;
+}
+#hero .hero .ion-bl .insto {
+  height: 31.9918212891px;
+  width: 31.83984375px;
+  color: red;
+}
+#hero .hero .ion-bl .you {
+  height: 31.9918212891px;
+  width: 31.83984375px;
+  color: red;
+  padding: 0 20px;
+}
+#hero .hero .ion-bl .call {
+  height: 31.9918212891px;
+  width: 31.83984375px;
+  color: red;
+}
+
+#car {
+  margin-top: -80px;
+  background: #222222;
+  padding-top: 1px;
+}
+#car .car--block {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+#car .car--block img {
+  margin: 5px 5px;
+}
+#car--request h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+}
+#car .request--block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#car .request--block h4 {
+  margin-top: -250px;
+  width: 629px;
+  height: 72px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+}
+#car .request--block__red {
+  margin-bottom: 50px;
+  width: 642px;
+  height: 400px;
+  background: #9D0013;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#car .request--block__red .ttt {
+  width: 582px;
+  height: 100px;
+}
+#car .request--block__red .bttn {
+  width: 582px;
+  height: 40px;
+  background: #222222;
+  border-radius: 10px;
+  border: 2px solid #222222;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+}
+#car .request--block__red .bttn:hover {
+  background: #FFFFFF;
+  color: #222222;
+  border: 2px solid #FFFFFF;
+  transition: 0.4s;
+}
+#car .request--block__red input {
+  width: 280px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  padding-left: 10px;
+}
+#car .request--block__red p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  width: 576px;
+  height: 48px;
+}
+
+#footer .footer {
+  display: flex;
+}
+#footer .footer--left {
+  margin-right: 201px;
+}
+#footer .footer--left h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  letter-spacing: 0.003em;
+  color: #000000;
+}
+#footer .footer--left button {
+  width: 294px;
+  height: 59px;
+  background: #FF001E;
+  border-radius: 5px;
+  border: 1px solid red;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  margin: 20px 0;
+}
+#footer .footer--left .zakaz:hover {
+  color: red;
+  background: #FFFFFF;
+  transition: 0.8s;
+  border: 1px solid red;
+}
+#footer .footer--left h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+#footer .footer--left div {
+  display: flex;
+  margin: 20px 0;
+}
+#footer .footer--left div p {
+  padding: 0 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+#footer .footer--left2 {
+  flex-direction: column;
+  display: flex;
+  margin: -1px 60px;
+}
+#footer .footer--left2 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 31px;
+}
+#footer .footer--left2 a {
+  margin: 10px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.003em;
+  color: #000000;
+}
+#footer .footer--left2 a:hover {
+  transition: 0.2s;
+  color: red;
+  text-decoration-line: underline;
+}
+#footer .footer--right {
+  flex-direction: column;
+  display: flex;
+}
+#footer .footer--right h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 31px;
+}
+#footer .footer--right a {
+  margin: 10px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+#footer .footer--right a:hover {
+  transition: 0.2s;
+  color: red;
+  text-decoration-line: underline;
+}
+#footer .footer--right2 {
+  margin: 0px 50px;
+}
+#footer .footer--right2 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 31px;
+}
+#footer .footer--right2 p {
+  margin: 10px 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+}
+
+/*# sourceMappingURL=style5.css.map */

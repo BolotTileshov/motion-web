@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#header {
+  backdrop-filter: blur(15px);
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.14);
+  position: fixed;
+}
+#header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  margin: 0 10px;
+}
+#header .header a:hover {
+  color: red;
+  transition: 0.4s;
+}
+#header .header .praft--btn {
+  width: 193px;
+  height: 48px;
+  border: 2px solid #FFFFFF;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  background: none;
+}
+#header .header .praft--btn:hover {
+  transition: 0.4s;
+  background: red;
+  border: none;
+}
+
+#hero {
+  background: url("../img/bg4.png");
+  min-height: 75vh;
+}
+#hero .hero {
+  padding-top: 250px;
+}
+#hero .hero h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+}
+#hero .hero h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  padding: 20px 0;
+}
+#hero .hero .hero--batton button {
+  width: 300px;
+  height: 50px;
+  background: #FF001E;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+  border: 1px solid red;
+}
+#hero .hero .hero--batton button:hover {
+  transition: 0.4s;
+  background: white;
+  color: black;
+  border: none;
+}
+#hero .hero p {
+  margin: 20px 0;
+  width: 384px;
+  height: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+#bloki {
+  background: #222222;
+}
+#bloki .bloki .click {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#bloki .bloki .click--block {
+  width: 400px;
+  height: 400px;
+  background: #FFFFFF;
+  border-radius: 20px;
+  margin: 15px 10px;
+}
+#bloki .bloki .click--block span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 31px;
+  color: red;
+  padding: 20px 0 10px 40px;
+}
+#bloki .bloki .click--block p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  width: 257px;
+  height: 120px;
+  width: 285px;
+  color: black;
+  padding: 20px 0 10px 40px;
+}
+#bloki .bloki .click--block__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#bloki .bloki .click--block__text h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  width: 257px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#bloki .bloki .click--block__text span {
+  font-weight: 700;
+  font-size: 24px;
+  color: red;
+}
+#bloki .bloki .click .click--block1 {
+  width: 400px;
+  height: 98px;
+  background: black;
+  border-radius: 20px;
+}
+#bloki .bloki .click .click--block1 .click--rod {
+  display: flex;
+  justify-content: space-around;
+}
+#bloki .bloki .click .click--block1 .click--rod .click--block__tochki {
+  margin-top: 10px;
+}
+#bloki .bloki .click .click--block1 img {
+  width: 50px;
+  height: 50px;
+  margin: 20px 30px;
+}
+#bloki .bloki .click .click--block1 .click--block__tochki {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+#bloki .click-butn button {
+  width: 413px;
+  height: 80px;
+  border: 2px solid #F5F7F9;
+  border-radius: 10px;
+  background: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+  margin-left: 480px;
+}
+#bloki .click-butn button:hover {
+  transition: 0.4s;
+  background: white;
+  color: red;
+}
+#bloki .request {
+  margin-top: 100px;
+}
+#bloki .request h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0.003em;
+  color: red;
+}
+#bloki .request--block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#bloki .request--block h4 {
+  margin-top: -250px;
+  width: 629px;
+  height: 72px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+  color: #FFFFFF;
+}
+#bloki .request--block__red {
+  margin-bottom: 50px;
+  width: 642px;
+  height: 400px;
+  background: #9D0013;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#bloki .request--block__red .ttt {
+  width: 582px;
+  height: 100px;
+}
+#bloki .request--block__red .bttn {
+  width: 582px;
+  height: 40px;
+  background: #222222;
+  border-radius: 10px;
+  border: 2px solid #222222;
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+}
+#bloki .request--block__red .bttn:hover {
+  background: #FFFFFF;
+  color: #222222;
+  border: 2px solid #FFFFFF;
+  transition: 0.4s;
+}
+#bloki .request--block__red input {
+  width: 280px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  padding-left: 10px;
+}
+#bloki .request--block__red p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.003em;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  width: 576px;
+  height: 48px;
+}
+
+/*# sourceMappingURL=style3.css.map */

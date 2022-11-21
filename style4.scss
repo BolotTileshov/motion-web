@@ -1,0 +1,582 @@
+$bb: yellow;
+@import "reset";
+@import "mixin";
+@import "veriabless";
+#header{
+  position: fixed ;
+  width: 100%;
+  padding: 15px 0;
+  backdrop-filter: blur(15px);
+  border-bottom: 2px solid rgba(355, 355, 355, 0.14);
+
+  .header{
+
+    @include space-between;
+    &--pravyi{
+      a{
+        @include a;
+        color: $bo;
+        margin: 0 20px;
+      }
+      a:hover{
+        color: red;
+        transition: 0.4s;
+        text-decoration-line: underline;
+      }
+      .pravyi-btn{
+        width: 193px;
+        height: 48px;
+        border: 2px solid red;
+        border-radius: 10px;
+        background: red;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0.003em;
+      }
+      .pravyi-btn:hover{
+        transition: 0.3s;
+        color: red;
+        border: 1px solid black;
+        background: #FFFFFf;
+
+      }
+
+    }
+  }
+}
+#hero{
+  background: url("../img/bg3.png");
+  min-height: 75vh;
+  .hero{
+
+    padding-top: 200px;
+    h1{
+      width: 411px;
+      height: 174px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 87px;
+      letter-spacing: 0.003em;
+      color: #FFFFFF;
+    }
+    h3{
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: 0.003em;
+      color: #FFFFFF;
+      padding: 15px 0;
+    }
+.Rab{
+  width: 250px;
+  height: 40px;
+  background: #FF001E;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  border: none;
+}
+    .Rab:hover {
+      transition: 0.4s;
+      background: white;
+      border: none;
+    }
+    p{
+      margin: 20px 0;
+      width: 384px;
+      height: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #FFFFFF;
+    }
+    .ion-bl{
+
+      .insto{
+        height: 31.9918212890625px;
+        width: 31.83984375px;
+        color: $isman;
+      }
+      .you{
+        height: 31.9918212890625px;
+        width: 31.83984375px;
+        color: $isman;
+        padding: 0 20px;
+      }
+      .call{
+        height: 31.9918212890625px;
+        width: 31.83984375px;
+        color: $isman;
+      }
+    }
+  }
+}
+#block{
+  margin-top: 30px;
+  .block{
+    @include space-eve;
+    &--technology{
+      @include div;
+      img{
+        margin-top: 20px;
+      }
+      p{
+        @include p;
+        margin: 20px 15px;
+      }
+    }
+
+  }
+}
+#product {
+
+  h1 {
+    @include h1;
+    color: red;
+    margin: 30px 20px;
+  }
+
+  .product--block{
+    @include space-eve;
+
+    &__left {
+      width: 487px;
+      height: 446px;
+      background: #222222;
+      border-radius: 20px;
+      position: relative;
+
+      span {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 288px;
+        color: rgba(255, 0, 30, 0.2);
+        position: absolute;
+      }
+
+      h2 {
+        @include h2;
+      }
+
+      p {
+        @include pblock;
+      }
+
+      ul {
+        color: red;
+        padding: 15px 40px;
+
+        li {
+          h3 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.003em;
+            color: #FFFFFF;
+          }
+        }
+      }
+
+      img {
+        padding-left: 25px;
+        padding-top: 10px;
+      }
+    }
+
+    &__right {
+      @include bloki;
+
+      span {
+        @include spanblock;
+      }
+
+      h2 {
+        @include h2;
+      }
+
+      p {
+        @include pblock;
+      }
+
+      h4 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 0.003em;
+        color: #FFFFFF;
+        padding: 5px 25px;
+      }
+
+      ul {
+        @include ul;
+
+        li {
+          h3 {
+            @include h3;
+          }
+        }
+      }
+
+      img {
+        padding-left: 300px;
+      }
+    }
+  }
+
+  .product--block1 {
+    @include space-eve;
+
+    &__left2 {
+      width: 700px;
+      height: 456px;
+      margin-top: 10px;
+      background: $black;
+      border-radius: 20px;
+
+      span {
+        @include spanblock;
+      }
+
+      h2 {
+        @include h2;
+      }
+
+      p {
+        @include pblock;
+      }
+
+      img {
+        padding: 20px 45px;
+      }
+
+    }
+
+    &__right2 {
+      height: 456px;
+      width: 541px;
+      background: #222222;
+      border-radius: 20px;
+
+      span {
+        @include spanblock;
+      }
+
+      h2 {
+        @include h2;
+
+      }
+
+      p {
+        @include pblock;
+      }
+
+      ul {
+        @include ul;
+
+        li {
+          h3 {
+            @include h3;
+          }
+        }
+      }
+
+      img {
+        padding: 20px 45px;
+      }
+    }
+  }
+
+  .product--block3 {
+    margin-top: 20px;
+    width: 1300px;
+    height: 342px;
+    background: #222222;
+    margin-left: 30px;
+    border-radius: 25px;
+
+    span {
+      @include spanblock;
+    }
+
+    h2 {
+      @include h2;
+    }
+
+    p {
+      @include pblock;
+    }
+
+    ul {
+      @include ul;
+
+      li {
+        h3 {
+          @include h3;
+        }
+      }
+    }
+  }
+}
+#car {
+  margin-top: 30px;
+  background: $car;
+
+  .car {
+    h1 {
+      @include h1;
+      margin-left: 20px;
+      color: red;
+      padding-top: 50px;
+    }
+
+    &--block {
+
+      margin-top: 80px;
+      padding: 0 20px;
+
+      p {
+        @include p;
+      }
+
+      img {
+        margin: 5px 5px;
+      }
+    }
+  }
+
+
+  .custom-btn {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: 500px;
+    width: 350px;
+    height: 80px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-6 {
+    background: red;
+    background: $black;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-6 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.003em;
+    padding-top: 30px;
+  }
+
+
+  .btn-6:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+    box-shadow:
+            -1px -1px 20px 0px rgba(255,255,255,1),
+            -4px -4px 5px 0px rgba(255,255,255,1),
+            7px 7px 20px 0px rgba(0,0,0,.4),
+            4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .btn-6:hover{
+    background: transparent;
+    color: red;
+    box-shadow: none;
+
+  }
+  .btn-6:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .btn-6 span:before,
+  .btn-6 span:after {
+    position: absolute;
+    content: "";
+    box-shadow:
+            -1px -1px 20px 0px rgba(255,255,255,1),
+            -4px -4px 5px 0px rgba(255,255,255,1),
+            7px 7px 20px 0px rgba(0,0,0,.4),
+            4px 4px 5px 0px rgba(0,0,0,.3);
+  }
+  .btn-6 span:before {
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:after {
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: .5px;
+    transition: all 500ms ease;
+  }
+  .btn-6 span:hover:before {
+    width: 100%;
+  }
+  .btn-6 span:hover:after {
+    width: 100%;
+  }
+
+}
+#footer{
+  .footer{
+    display: flex;
+    &--left{
+      margin-right: 201px;
+      h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 72px;
+        letter-spacing: 0.003em;
+        color: #000000;
+
+      }
+      button{
+        width: 294px;
+        height: 59px;
+        background: #FF001E;
+        border-radius: 5px;
+        border: 1px solid red;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.003em;
+        color: $bo;
+        margin: 20px 0;
+      }
+      .zakaz:hover{
+        color: red;
+        background: $bo;
+        transition: 0.8s;
+        border: 1px solid red;
+      }
+      h3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+      }
+      div{
+        display: flex;
+        margin: 20px 0;
+        p{
+          padding: 0 10px;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 22px;
+          color: #000000;
+        }
+      }
+    }
+    &--left2{
+      flex-direction: column;
+      display: flex;
+      margin: -1px 60px;
+
+      h1{
+        @include h1;
+      }
+      a{
+        margin: 10px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.003em;
+        color: #000000;
+      }
+      a:hover{
+        transition: 0.2s;
+        color: red;
+        text-decoration-line: underline;
+      }
+
+    }
+    &--right{
+      flex-direction: column;
+      display: flex;
+
+      h1{
+        @include h1;
+      }
+      a{
+        margin: 10px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+
+      }
+      a:hover{
+        transition: 0.2s;
+        color: red;
+        text-decoration-line: underline;
+      }
+    }
+    &--right2{
+      margin: 0px 50px;
+      h1{
+        @include h1;
+      }
+      p{
+        margin: 10px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+      }
+    }
+  }
+}
+
