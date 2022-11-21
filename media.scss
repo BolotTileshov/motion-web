@@ -1,0 +1,176 @@
+@media(max-width: 1440px){}
+@media(max-width: 1200px){
+  #product
+  {
+    .product--block3 {
+    margin-top: 20px;
+    width: 100%;    }
+
+  }
+}
+@media(max-width: 1024px) {
+  #header {
+    width: 100%;
+  }
+  #product {
+    .product {
+      &--block {
+        &__left {
+          width: 40%;
+          height: auto;
+        }
+
+        &__right {
+          width: 709px;
+          height: 522px;
+        }
+
+      }
+      &--block2 {
+        width: 497px;
+        height: 456px;
+        &__left2 {
+          width: 411px;
+          height: 465px;
+          margin-top: 10px;
+          background: #222222;
+          border-radius: 20px;
+          margin-left: 368px;
+        }
+      }
+    }
+  }
+  #team {
+    .slider {
+      &--boy1 {
+        width: 152px;
+        height: 330px;
+        background: #F5F7F9;
+      }
+    }
+  }
+  #footer {
+    .footer {
+      &--right2 {
+        margin: -80px 13px;
+      }
+    }
+  }
+  #block {
+    .block {
+      &--technology {
+        width: 248px;
+        height: 170px;
+        background: #222222;
+        border-radius: 20px;
+        text-align: center;
+      }
+    }
+  }
+  #hero {
+    min-height: 85vh;
+  }
+}
+@media(max-width: 992px) {
+  #footer {
+    .footer {
+      &--left2 {
+        flex-direction: column;
+        display: flex;
+        margin: -80px 40px;
+      }
+    }
+  }
+  #block {
+    .block {
+      &--technology {
+        p {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #FFFFFF;
+          width: 211px;
+          margin: 20px 15px;
+        }
+      }
+    }
+  }
+}
+@media(max-width: 768px) {
+  #block {
+    .block {
+      &--technology {
+        width: 190px;
+        height: 170px;
+        background: #222222;
+        border-radius: 20px;
+        text-align: center;
+      }
+    }
+  }
+  #block {
+    .block {
+      &--technology {
+        p {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #FFFFFF;
+          width: 156px;
+          margin: 20px 15px;
+        }
+      }
+    }
+  }
+
+
+  #car {
+    .custom-btn {
+      display: none;
+    }
+  }
+  #product {
+    .product--block2 {
+      &__left2 {
+        width: 411px;
+        height: 465px;
+        margin-top: 10px;
+        background: #222222;
+        border-radius: 20px;
+        margin-left: 368px;
+        display: none;
+      }
+    }
+
+    .product--block {
+      &__left {
+        img {
+          padding-left: 25px;
+          padding-top: 10px;
+          display: none;
+        }
+      }
+    }
+  }
+  #team {
+    .slider--boy3 {
+      padding-top: -60px;
+      width: 183.64px;
+      height: 381.51px;
+      background: #F5F7F9;
+      display: none;
+    }
+  }
+  #footer {
+    .footer--left2 {
+      flex-direction: column;
+      margin: -80px -40px;
+      display: none;
+    }
+    .footer--right {
+      margin: -80px -15px;
+    }
+  }
+}

@@ -3,6 +3,10 @@ $be:#FF001E;
 @import "reset";
 @import "veriabless";
 
+
+
+
+
 #header{
   position: fixed ;
   width: 100%;
@@ -110,7 +114,6 @@ $be:#FF001E;
 #hero{
   background: url("../img/bg.png");
   min-height: 100vh;
-
   .hero{
     padding-top: 150px;
     &--motion{
